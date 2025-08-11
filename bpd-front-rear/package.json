@@ -1,0 +1,25 @@
+{
+  "name": "bpd-front-rear",
+  "version": "1.0.0",
+  "description": "BPD Front Rear PLC OC",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config app.js dotenv_config_path=./env/.env.dev",
+    "prod": "nodemon -r dotenv/config app.js dotenv_config_path=./env/.env.prod",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "models": "node ./config/sequelizeAuto.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "moment": "^2.30.1",
+    "mysql2": "^3.14.1",
+    "node-opcua": "^2.156.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "sequelize-auto": "^0.8.8"
+  }
+}
